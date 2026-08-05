@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "Golf Notebook",
+    "slug": "golf-notebook",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "golfnotebook",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#0F2A18",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.golfnotebook.app"
+    },
+    "android": {
+      "package": "com.golfnotebook.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#0F2A18",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
