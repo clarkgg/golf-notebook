@@ -13,6 +13,23 @@ test suite.
 
 ## Playing it on your iPhone
 
+### Home screen, no install
+
+Build a single self-contained HTML file, put it anywhere your phone can reach,
+open it in Safari, then **Share → Add to Home Screen**. It gets its own icon,
+opens full screen without Safari's chrome, and runs offline — the file has no
+external requests at all.
+
+```sh
+npx expo export --platform web
+node scripts/build-web-page.mjs        # → dist/golf-notebook.html, ~400 KB
+```
+
+Scores are saved in the browser's local storage, so they survive between
+sessions but do not follow you to another device.
+
+### As a native app
+
 The quickest route, no Mac required:
 
 1. Install **Expo Go** from the App Store.

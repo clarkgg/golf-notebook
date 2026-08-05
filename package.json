@@ -24,6 +24,7 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
+    "build:page": "expo export --platform web && node scripts/build-web-page.mjs",
     "test": "tsc -p tsconfig.test.json && node --test test-build/src/core/core.test.js",
     "typecheck": "tsc --noEmit",
     "inspect": "tsc -p tsconfig.test.json && node test-build/scripts/inspect-hole.js"
